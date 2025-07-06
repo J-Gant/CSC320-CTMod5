@@ -9,15 +9,12 @@ public class Calculations {
 		int length = monthNames.length;
 		return length;
 	}
-	
 	public String[] getMonthNames() {
 		return monthNames;
 	}
-	
 	public int[] getMonthlyTemp() {
 		return monthlyTemp;
 	}
-
 	// calculate yearlyTemp from monthlyTemp[] array elements
 	public int yearlyTemp() {
 		int sum = 0;
@@ -28,7 +25,6 @@ public class Calculations {
 		yearlyTemp = sum / monthlyTemp.length;
 		return yearlyTemp;
 	}
-
 	// find minimum monthly temperature
 	public int minTemp() {
 		int minTemp = monthlyTemp[0];
@@ -39,7 +35,6 @@ public class Calculations {
 		}
 		return minTemp;
 	}
-
 	// find coldest month
 	public String coldestMonth() {
 		int minTemp = monthlyTemp[0];
@@ -52,7 +47,6 @@ public class Calculations {
 		}
 		return coldestMonth;
 	}
-
 	// find maximum monthly temperature
 	public int maxTemp() {
 		int maxTemp = monthlyTemp[0];
@@ -63,7 +57,6 @@ public class Calculations {
 		}
 		return maxTemp;
 	}
-
 	// find hottest month
 	public String hottestMonth() {
 		int maxTemp = monthlyTemp[0];
@@ -76,5 +69,4 @@ public class Calculations {
 		}
 		return hottestMonth;
 	}
-
 }
